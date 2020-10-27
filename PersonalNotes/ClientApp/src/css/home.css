@@ -1,0 +1,67 @@
+﻿/* reset*/
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+/* style for HomePage body*/
+.notesBody {
+    background-color: #ffffff;
+    height:auto !important;
+    min-width: 100%;
+}
+
+/* Style the footer */
+.notesFooter {
+    color: #09B8C8;
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 200px !important;
+    margin-right: 100px;
+}
+
+
+/* Tablet Styles go here */
+@media screen and (min-width: 768px) {
+
+
+    .notesBody {
+        background-color: #ffffff;
+        height: auto !important;
+        min-width: 100%;
+    }
+    /* Style the footer */
+
+    .notesFooter {
+        color: #09B8C8;
+        grid-area: footer;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 270px;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    .notesBody {
+        background-color: #ffffff;
+        height: auto !important;
+        min-width: 100%;
+    }
+
+    /* Style the footer */
+    .notesFooter {
+        color: #09B8C8;
+        grid-area: footer;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 220px !important;
+        margin-right: 683px !important;
+    }
+}

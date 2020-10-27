@@ -1,0 +1,380 @@
+﻿body {
+    margin: 0;
+    overflow-x: hidden;
+}
+/*Style for ReadNotes body*/
+.notesBody {
+    background-color: #ffffff;
+    height: auto !important;
+    min-width: 100%;
+}
+
+.item {
+    margin: 0px 0px 0px 10px;
+    padding: 5px;
+    width: 243px;
+    height: 91px;
+}
+
+.update-add-item {
+    margin: 45px 0px 0px 20px;
+    position: absolute;
+    background-color: #09B8C8;
+    color: #ffffff;
+    height: 30px;
+    width: 75px;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* style for Edit(Update) Form*/
+.renderUpdateForm {
+   border-bottom: 2px solid #ffa7a7;
+    padding: 5px;
+}
+/* Style the header */
+.header {
+    grid-area: header;
+    justify-self: left;
+}
+
+.headerNav > * {
+    grid-row: 1;
+}
+
+.headerNav {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    background-color: #faebd7;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffa7a7;
+    align-items: center;
+    font-weight: bold;
+}
+
+.Nav {
+    list-style: none;
+    grid-row: 1;
+    cursor: pointer;
+    margin-right: 35px;
+}
+a {
+    text-decoration: none;
+}
+
+.header-li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Link1, .Link2 {
+    margin-right: 20px;
+}
+
+.header-li:hover {
+    transition: 0.3s ease;
+}
+
+/* The grid container*/
+.grid-containerNotes {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'main main main main main main' 'notesFooter notesFooter notesFooter notesFooter notesFooter notesFooter';
+    /* grid-column-gap: 10px;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/*Style For Logo*/
+.logo {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+/*Style For Title*/
+.tabelLabel {
+    text-align: center;
+    color: #44156F;
+}
+
+/* Style the main column */
+.mainNotes {
+    grid-area: main;
+    padding: 10px;
+    height: 100%;
+    margin-left: 15px;
+    width: 350px;
+    text-align: justify;
+    border-top: 2px solid #ffA7A7;
+}
+/* Style For Notes*/
+.pNotes {
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+/* Style the footer */
+.notesFooter {
+    color: #09B8C8;
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+.footer-p {
+    line-height: 5px;
+}
+.follow-icon {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.follow-span {
+    text-align: center;
+    margin-top: 5px;
+    line-height: 0px;
+}
+
+footer > div > span > p > a:nth-child(1) > svg {
+    color: #09B8C8;
+}
+
+footer > div > span > p > a:nth-child(2) {
+    color: #09B8C8;
+}
+.icon {
+    cursor: pointer;
+    font-size: 23px;
+    margin-right: 10px;
+    color: #09B8C8;
+}
+ .icon:hover {
+   color: #44156F !important;
+
+ }
+
+/* tooltips html
+source: https://www.w3schools.com/howto/howto_css_tooltip.asp
+Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  margin-top:25px;
+}
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 100px;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        color: #44156F;
+    }
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible !important;
+    }
+
+/* Tablet Styles go here */
+@media screen and (min-width: 768px) {
+ 
+    .logo {
+        width: 100px;
+        height: auto;
+        margin-left: 24px;
+    }
+
+    .notesBody {
+        background-color: #ffffff;
+        height: auto !important;
+        min-width: 100%;
+    }
+    .headerNav {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        background-color: #faebd7 !important;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #ffa7a7;
+    }
+
+    .mainNotes {
+        grid-area: main;
+        padding: 10px;
+        height: auto;
+        width: 450px;
+        margin-left: 150px;
+        margin-right: 150px;
+        border-top: 2px solid #ffA7A7;
+    }
+
+    .pNotes {
+        line-height: 25px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        width: 450px;
+        border-bottom: 1px solid;
+    }
+    .icon {
+        cursor: pointer;
+        font-size: 23px;
+        margin-right: 10px;
+        color: #09B8C8;
+    }
+
+    .icon:hover {
+        color: #44156F;
+    }
+
+    /* tooltips html
+source: https://www.w3schools.com/howto/howto_css_tooltip.asp
+Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        margin-top: 25px;
+    }
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 100px;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -60px;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+            color: #44156F;
+        }
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    /* Style the footer */
+
+    .notesFooter {
+        color: #09B8C8;
+        grid-area: footer;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 270px;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    /* Style the main column */ 
+
+    .logo {
+        width: 100px;
+        height: auto;
+        margin-left: 24px;
+    }
+    .notesBody {
+        background-color: white;
+        height: auto;
+        min-width: 100%;
+    }
+    .headerNav {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        background-color: #faebd7 !important;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #ffa7a7;
+        align-items: center;
+    }
+
+    .mainNotes {
+        grid-area: main;
+        padding: 10px;
+        height: 100%;
+        border-top: 2px solid #ffA7A7;
+        margin-left: 550px;
+        margin-right: 400px;
+    }
+
+    .pNotes {
+        line-height: 25px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        border-bottom: 1px solid;
+    }
+    .icon {
+        cursor: pointer;
+        font-size: 23px;
+        margin-right: 10px;
+        color: #09B8C8;
+    }
+
+    .icon:hover {
+        color: #44156F;
+    }
+
+    /* tooltips html
+source: https://www.w3schools.com/howto/howto_css_tooltip.asp
+Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        margin-top: 25px;
+    }
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 100px;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -60px;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+            color: #44156F;
+        }
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+    /* Style the footer */
+    .notesFooter {
+        color: #09B8C8;
+        grid-area: footer;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 40px;
+        margin-right: 630px;
+
+    }
+}

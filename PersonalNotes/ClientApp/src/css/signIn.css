@@ -1,0 +1,298 @@
+﻿/* SignIn Page body*/
+.signInBody {
+    background: url(../media/background_image.jpg) no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    overflow-x: hidden;
+    height: auto;
+    max-width: 100vw;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas: 'main main main main main main' 'footer footer footer footer footer footer';
+    grid-column-gap: 10px;
+}
+
+/* Style the main column */
+.main {
+    grid-area: main;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style the footer */
+.footer {
+    color: #09B8C8;
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 280px;
+}
+
+.footer-p {
+    line-height: 5px;
+}
+
+footer > div > span > p > a:nth-child(1) > svg {
+    color: #09B8C8;
+}
+
+footer > div > span > p > a:nth-child(2) {
+    color: #09B8C8;
+}
+.follow-icon {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.follow-span {
+    text-align: center;
+    margin-top: 5px;
+    line-height: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+/*Style For Statement*/
+.welcome {
+    font-size: 42px;
+    color: #f0fff0;
+    font-weight: bold;
+}
+
+.statementSignIn {
+    font-size: 26px;
+    color: #f0fff0;
+    line-height: 35px;
+}
+/*Style for Buttons*/
+.signIn, .signUp {
+    background-color: #09B8C8;
+    color: #f0fff0;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 32px;
+    width: 200px;
+}
+/* Style for Input Element*/
+input {
+    background-color: #f0fff0;
+    color: #000000;
+    height: 25px;
+    width: 200px;
+    font-weight: bold;
+    padding-left: 5px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Style for Heading*/
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+
+    h2:before,
+    h2:after {
+        background-color: azure;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 180px;
+        font-weight: bold;
+    }
+
+    h2:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    h2:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+    h2 span {
+        color: honeydew;
+        font-size: 20px;
+    }
+/* Style for Warnings*/
+#warning {
+    color: #FF0000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Tablet Styles go here */
+@media screen and (min-width: 768px) {
+    .main {
+        grid-area: main;
+        padding: 10px;
+        height: 500px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    /* Style the footer */
+    .footer {
+        color: #09B8C8;
+        grid-area: footer;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 45px;
+    }
+    .input1 {
+        margin-right: 15px;
+    }
+}
+/*Desktop Styles go here */
+@media screen and (min-width: 1024px) {
+    .main {
+        grid-area: main;
+        padding: 10px;
+        height: 440px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .signInBody {
+        background: url(../media/background_image.jpg) no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+    /* Style the footer */
+    .footer {
+        color: #09B8C8;
+        grid-area: footer;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 130px !important;
+    }
+
+    .footer-p {
+        line-height: 5px;
+    }
+
+    .welcome {
+        font-size: 42px;
+        color: honeydew;
+        font-weight: bold
+    }
+
+    .statementSignIn {
+        font-size: 26px;
+        color: honeydew;
+        line-height: 20px;
+    }
+
+    .signIn, .signUp {
+        background-color: #09B8C8;
+        color: honeydew;
+        font-weight: bold;
+        border-radius: 8px;
+    }
+
+    input {
+        background-color: honeydew;
+        color: black;
+        height: 25px;
+        width: 200px;
+        font-weight: bold;
+        padding-left: 5px;
+        border-radius: 8px;
+    }
+
+    .input1 {
+        margin-right: 15px;
+    }
+
+    .signIn {
+        height: 32px;
+        width: 418px;
+    }
+
+    .signUp {
+        height: 31px;
+        width: 200px;
+    }
+
+    h2 {
+        overflow: hidden;
+        text-align: center;
+    }
+
+        h2:before,
+        h2:after {
+            background-color: azure;
+            content: "";
+            display: inline-block;
+            height: 2px;
+            position: relative;
+            vertical-align: middle;
+            width: 180px;
+            font-weight: bold;
+        }
+
+        h2:before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
+
+        h2:after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
+
+        h2 span {
+            color: honeydew;
+            font-size: 20px;
+        }
+
+    .follow-icon {
+        color: #09B8C8;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .follow-span {
+        text-align: center;
+        margin-top: 5px;
+        line-height: 0px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #warning {
+        color: #FF0000;
+        font-weight: bold;
+    }
+}
+
+
+/*Background image form different pages::after @ link::after https://stackoverflow.com/questions/52288293/apply-different-background-image-for-different-pages-in-react-js
+
+ Home page design style: https://blog.hubspot.com/blog/tabid/6307/bid/34006/15-examples-of-brilliant-homepage-design.aspx
+*/
